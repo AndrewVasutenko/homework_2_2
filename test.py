@@ -15,7 +15,7 @@ def positive_search_test():
     browser.element('[id="search"]').should(have.text('Selene - User-oriented Web UI browser tests in Python'))
 
 
-def negative_test():
+def negative_search_test():
     browser.open('https://google.com/ncr')
-    browser.element('[name="q"]').should(be.blank).type('Python').press_enter()
+    browser.element('[name="q"]').should(be.blank).type('njaldkasnldjnaldxal').press_enter()
     browser.element('[id="search"]').should(have.no.text('Selene - User-oriented Web UI browser tests in Python'))
